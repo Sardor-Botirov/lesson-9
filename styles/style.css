@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+}
+body{
+    background-color: #8e8e8e;
+    position: relative;
+    padding: 10px 0 0 0 ;
+}
+.wrapper{
+    background-color: white;
+    position: relative;
+    max-width: 400px;
+    height: 700px;
+    /* background-color: pink; */
+    margin: 0 auto;
+    border-radius: 45px;
+    overflow: hidden;
+}
+.wrapper_photo{
+    position: absolute;
+    width: 100%;
+    height: 230px;
+    background-image: url(../img/nature.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.wrapper_photo__img{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px;
+}
+.wrapper_photo__img img{
+    height: 30px;
+    filter: invert(100);
+}
+.arrow{
+    width: 40px;
+    height: 40px;
+    background-color: #7792a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    transition: 300ms;
+}
+.favourites{
+    width: 40px;
+    height: 40px;
+    background-color: #7792a3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 60px;
+    transition: 300ms;
+}
+.arrow:hover{
+    background-color: #afcfe4;
+}
+.arrow:hover .arrow img{
+    filter: invert(50%);
+}
+.favourites:hover{
+    background-color: #afcfe4;
+}
+.favourites:hover .favourites img{
+    filter: invert(50%);
+}
+
+/* ---------item---------- */
+.item{
+     width: 100%;
+     height: fit-content;
+     display: flex;
+     align-items: center;
+     justify-content: space-between;
+     /* background-color: rgb(197, 116, 116); */
+     margin-top: 240px;
+     padding: 0 20px;
+}
+.item-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    background-color: yellow;
+    padding: 5px;
+    border-radius: 8px;
+}
+.item-left img {
+    margin-right: 5px;
+}
+.item-right img {
+    margin-right: 5px;
+}
+.item-right{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: fit-content;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+}
+.item_2{
+    padding: 20px;
+    /* background-color: blue; */
+    width: 100%;
+    height: 100%;
+}
+.item_title{
+    margin-bottom: 20px;
+}
+.item_title p {
+    font-size: 20px;
+}
+.item_info{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top: 2px solid #f0f0f0;
+    border-bottom: 2px solid #f0f0f0;
+    padding: 10px 0 ;
+    margin-bottom: 20px;
+}
+.item_info_left{
+    display: flex;
+    align-items: center;
+}
+.row_img{
+    width: 40px;
+    height: 40px;
+    background-color: #f0f0f0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    margin-right: 10px;
+}
+.row_text p{
+    font-size: 14px;
+    font-weight: 500;
+}
+.item_description_title{
+    
+}
+.item_description_title p{
+    margin-bottom: 10px;
+    font-weight: 600;
+    font-size: 14px;
+}
+.item_description_title span{
+    font-size: 15px;
+}
+.item_description_img{
+    width: 100%;
+    height: 100px;
+    background-color: pink;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-image: url(../img/water.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-top: 10px;
+}
+.item_description_sub_title{
+    overflow: hidden;
+    margin-top: 10px;
+    height: 90px;
+}
+.btn{
+    background-color: #3562D7;
+    border: none;
+    border-radius: 20px;
+    cursor: pointer;
+    color: white;
+    transition: 300ms;
+    width: 100%;
+    height: 45px;
+    margin-top: 15px;
+}
+.btn:hover{
+    background-color: #1b3a88;
+}
